@@ -21,7 +21,7 @@
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Recipient's username"
                     aria-label="Recipient's username" aria-describedby="button-addon2" />
-                <button class="btn btn-outline-secondary" type="button">
+                <button id="btn" class="btn btn-outline-secondary" type="button">
                     <img src="./srch.png" alt="" class="mx-4" />
                 </button>
             </div>
@@ -42,31 +42,31 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex">
-                    <li class="nav-item">
+                    <li id="show" class="nav-item" onclick="navBtnClick('show')">
                         <a class="nav-link text-light" aria-current="page" href="#">Shows</a>
                     </li>
-                    <li class="nav-item">
+                    <li  id="people" class="nav-item" onclick="navBtnClick('people')">
                         <a class="nav-link text-light" aria-current="page" href="#">People</a>
                     </li>
-                    <li class="nav-item">
+                    <li  class="nav-item">
                         <a class="nav-link text-light" aria-current="page" href="#">Networks</a>
                     </li>
-                    <li class="nav-item">
+                    <li   class="nav-item">
                         <a class="nav-link text-light" aria-current="page" href="#">Web Channels</a>
                     </li>
-                    <li class="nav-item">
+                    <li  class="nav-item">
                         <a class="nav-link text-light" aria-current="page" href="#">Article</a>
                     </li>
-                    <li class="nav-item">
+                    <li   class="nav-item">
                         <a class="nav-link text-light" aria-current="page" href="#">Schedule</a>
                     </li>
-                    <li class="nav-item">
+                    <li   class="nav-item">
                         <a class="nav-link text-light" aria-current="page" href="#">Calendar</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" aria-current="page" href="#">Countdown</a>
                     </li>
-                    <li class="nav-item">
+                    <li   class="nav-item">
                         <a class="nav-link text-light" aria-current="page" href="#">Forums</a>
                     </li>
                 </ul>
@@ -77,12 +77,9 @@
             <h3 class="py-3">Popular shows airing tonight</h3>
 
             <div id="card1" class=" flex flex-wrap gap-5 justify-content-start">
-
+             No Movie
             </div>
 
-            <center>
-                <button id="btn" class="btn btn-outline-dark mt-3">Add</button>
-            </center>
     </main>
 
     <script src="js.js"></script>
