@@ -8,7 +8,11 @@ $.modal().open();
 function genCard(movie) {
   return `<div class="col-2">
   <div class="card" style="width: 18rem; height:36rem">
-  <img src="${movie?.image?.medium ?movie.image.medium:'https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg' }" style="width: 18rem; height:36rem" class="card-img-top" />
+  <img src="${
+    movie?.image?.medium
+      ? movie.image.medium
+      : "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"
+  }" style="width: 18rem; height:36rem" class="card-img-top" />
   <div class="card-body">
         <h5 class="card-title">${movie.name}</h5>
           <p class="card-text">${movie.premiered}</p>
@@ -39,18 +43,15 @@ function getVal() {
     .then((data) => {
       let searchResult = [];
       for (let date of data) {
-        
         searchResult.push(date.show);
-        
       }
       console.log(searchResult);
-      movies = searchResult
+      movies = searchResult;
       render();
     });
 }
 
 btn.onclick = getVal;
-btn.on;
 
 fetch("https://api.tvmaze.com/shows?page=0")
   .then((response) => response.json())
