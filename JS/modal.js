@@ -40,3 +40,6 @@ $.modal = function (options) {
     destroy() {},
   };
 };
+
+
+nmn
