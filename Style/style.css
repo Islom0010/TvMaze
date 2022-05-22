@@ -87,6 +87,10 @@ nav {
   background-color: rgb(98, 192, 181);
 }
 
+#card1 {
+  cursor: pointer;
+}
+
 /* ```````````````````````````````` */
 
 .container-1 {
@@ -95,7 +99,6 @@ nav {
   margin: 0 auto;
 }
 
-.modall.open .modal-overlay,
 .modall.open .modal-window {
   opacity: 1;
   z-index: 1000; 
