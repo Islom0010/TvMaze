@@ -1,0 +1,156 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  background: #3f3f3f;
+  height: 100px;
+  padding: 0 130px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+header a:hover {
+  color: rgb(60, 148, 139);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .left {
+  justify-content: space-around;
+}
+
+.left img {
+  height: 50px;
+}
+
+header .midle {
+  min-width: 53%;
+  min-height: 70px;
+  margin-top: 15px;
+}
+
+header .input-group {
+  border-radius: 15px;
+  border: none;
+  background: rgb(60, 148, 139);
+  color: white;
+}
+header .btn {
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+}
+
+header .form-control {
+  border-radius: 15px;
+  height: 50px;
+  border: none;
+}
+
+header .btn:hover {
+  background: rgb(98, 192, 181);
+}
+
+.midle img {
+  width: 30px;
+  height: 30px;
+}
+
+/* navbar  */
+
+main ul {
+  width: 49%;
+  background-color: rgb(98, 192, 181);
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: white;
+}
+
+main nav .navbar-expand-lg,
+nav {
+  background-color: rgb(98, 192, 181);
+}
+
+#card1 {
+  cursor: pointer;
+}
+
+/* ```````````````````````````````` */
+
+.container-1 {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.modall.open .modal-window {
+  opacity: 1;
+  z-index: 1000; 
+}
+
+.modal-window,
+.modal-overlay {
+  opacity: 0;
+  z-index: -1;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-window {
+  width: 600px;
+  border-radius: 5px;
+  background: #fff;
+  margin: 200px auto;
+  height: 200px;
+}
+
+.modal-header {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+}
+
+.modal-close {
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 10px;
+}
+
+.modal-body p {
+  margin: 0 0 5px;
+}
+
+.modal-footer {
+  padding: 5px 10px;
+  border-top: 1px solid #eee;
+}
